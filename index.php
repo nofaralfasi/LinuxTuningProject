@@ -15,7 +15,7 @@
 	<meta name="msapplication-navbutton-color" content="#333">
 
 	<script type="text/javascript" src="./js/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript" src="./js/Chart.min.js"></script>
+    	<script type="text/javascript" src="./js/Chart.min.js"></script>
     <!--<script type="text/javascript" src="./js/angular.min.js"></script>-->
 
 	<?php

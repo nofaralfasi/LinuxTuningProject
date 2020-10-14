@@ -1,6 +1,6 @@
 <div class='container'>
 	<div class='six columns chart'>
-		<canvas id="network" height="172" width="240"></canvas>
+		<canvas id="network" height="190" width="290"></canvas>
 		<script>		
 			var data = {
 				labels: [
@@ -9,9 +9,9 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['network_tx']; ?>, <?php echo $stat['network_rx']; ?>],
-					backgroundColor: ["#2980b9", "#2980b9"],
-					hoverBackgroundColor: ["#2573A7", "#2573A7"],
-					borderColor: ["#ccc", "#ccc"],
+					backgroundColor: ["#fff", "#fff"],
+					hoverBackgroundColor: ["#eee", "#eee"],
+					borderColor: ["#fff", "#fff"],
 					borderWidth: 2,
 				}]
 			};
@@ -40,7 +40,7 @@
 	                            value = value.toString();
 	                            return value + 'GB';
 	                        },
-	                        fontColor: "#ccc",
+	                        fontColor: "#fff",
 	                    },
 	                }],
 	                xAxes: [{
@@ -48,7 +48,7 @@
 	                        display: false,
 	                    },
 	                    ticks: {
-	                    	fontColor: "#ccc",
+	                    	fontColor: "#fff",
 	                    }
 	                }]
 	            }
