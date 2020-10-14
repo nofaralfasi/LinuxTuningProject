@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Linux Project</title>
-	<meta name="description" content="ServerStatus">
+	<meta name="description" content="Linux Project Nofar Alfasi">
 	<link rel="shortcut icon" href="./img/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="./css/reset.min.css">

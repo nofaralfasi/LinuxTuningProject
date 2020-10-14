@@ -5,6 +5,7 @@
 	$prevIdle = $prevArr[5];
 	usleep(0.15 * 1000000);
 	$val = shell_exec("cat /proc/stat");
+	$val2 = exec("/usr/bin/perl /var/www/html/ServerStatus-master/scripts/cat.pl linuxu Linux1212",$output);
 	$arr = explode(' ', trim($val));
 	$total = $arr[2] + $arr[3] + $arr[4] + $arr[5];
 	$idle = $arr[5];

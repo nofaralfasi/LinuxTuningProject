@@ -4,8 +4,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>ServerStatus | Configuration</title>
-	<meta name="description" content="ServerStatus">
+	<title>Linux Project | Configuration</title>
+	<meta name="description" content="Linux Project Tuning">
 	<link rel="shortcut icon" href="../img/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="../css/reset.min.css">
@@ -55,7 +55,8 @@
 		$df = shell_exec("df --output='target'");
 		$dflist = substr($df, 11, -1);
 		$dfarray = explode("\n", $dflist);
-		$ls = shell_exec("ls /sys/class/net");
+		$ls2 = shell_exec("ls /sys/class/net");
+		$ls = exec("/usr/bin/perl /var/www/html/ServerStatus-master/scripts/ls.pl linuxu Linux1212",$output);
 		$lslist = substr($ls, 0, -1);
 		$lsarray = explode("\n", $lslist);
 	?>
