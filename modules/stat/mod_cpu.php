@@ -10,7 +10,7 @@
 				datasets: [{
 					data: [<?php echo $stat['cpu_usage']; ?>, 100 - <?php echo $stat['cpu_usage']; ?>],
 					backgroundColor: ["#ff0100", "#009b00"],
-					hoverBackgroundColor: ["red", "green"],
+					hoverBackgroundColor: ["#dc0000", "green"],
 					borderColor: ["#eee", "#eee"],
 				}]
 			};

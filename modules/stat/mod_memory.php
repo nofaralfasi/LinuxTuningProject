@@ -9,9 +9,9 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['memory_used']; ?>, <?php echo $stat['memory_free']; ?>],
-					backgroundColor: ["#e74c3c", "#2980b9"],
-					hoverBackgroundColor: ["#E43825", "#2573A7"],
-					borderColor: ["#ccc", "#ccc"],
+					backgroundColor: ["#ff0100", "#009b00"],
+					hoverBackgroundColor: ["#dc0000", "green"],
+					borderColor: ["#eee", "#eee"],
 				}]
 			};
 

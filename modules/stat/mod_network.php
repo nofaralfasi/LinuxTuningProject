@@ -1,6 +1,6 @@
 <div class='container'>
 	<div class='six columns chart'>
-		<canvas id="network" height="190" width="290"></canvas>
+		<canvas id="network" height="170" width="290"></canvas>
 		<script>		
 			var data = {
 				labels: [
@@ -10,7 +10,7 @@
 				datasets: [{
 					data: [<?php echo $stat['network_tx']; ?>, <?php echo $stat['network_rx']; ?>],
 					backgroundColor: ["#fff", "#fff"],
-					hoverBackgroundColor: ["#eee", "#eee"],
+					hoverBackgroundColor: ["#fff", "#fff"],
 					borderColor: ["#fff", "#fff"],
 					borderWidth: 2,
 				}]
