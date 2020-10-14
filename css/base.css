@@ -1,0 +1,313 @@
+/*===============*/
+/*====  CSS  ====*/
+/*===============*/
+
+
+
+/*====================*/
+/*=== Basic Styles ===*/
+/*=====feb101===============*/
+
+body {
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #fcb91b;
+}
+
+p {
+	font-size: 24px; 
+	font-weight: 300;
+	color: #fff;
+	line-height: 22px;
+	padding: 0 0 12px 0;
+}
+
+b {
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #777;
+    transition: color .2s ease-in-out;
+}
+
+h1 {
+	font-size: 32px;
+	color: #eee;
+	font-weight: 600;
+	line-height: 90px;
+	text-align: center;
+}
+
+h1 > a {
+	color: #eee;
+}
+
+h1 > a:hover {
+	text-decoration: none;
+	color: #aaa;
+}
+
+h2 {
+	font-size: 30px;
+	color: #eee;
+	line-height:36px;
+	padding: 10px 0 14px 0;
+}
+
+h3 {
+	font-size: 38px;
+	font-family: sans-serif;
+	font-weight: 600;
+	padding: 0 0 10px;
+	color: #fff;
+	padding: 8px 0 12px 0;
+}
+
+h4 {
+	color: #eee;
+	font-size: 20px;
+	line-height:24px;
+	padding: 6px 0 8px 0;
+}
+
+h5 {
+	color: #eee;
+	font-size: 18px;
+	line-height:22px;
+	padding: 6px 0 8px 0;
+}
+
+h6 {
+	font-size: 14px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	padding: 6px 0 8px 0;
+}
+
+.container .clear, body .clear {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 20px 0;
+}
+
+input, textarea, select, button { 
+	padding: 9px 0;
+	color: #fff;
+	border: solid 1px #A9A9A9;
+	outline: 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 12px;
+	width: 198px;
+	background: #333;
+	text-align: center;
+}
+
+.submit {
+	margin: 36px 0 10px 0;
+}
+
+textarea { 
+	width: 200px;
+	max-width: 200px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus,
+select:hover, select:focus,
+button:hover, button:focus { 
+	border-color: #C9C9C9;
+	background: #444;
+	color: #ccc;
+    transition: all .2s ease-in-out;
+}
+
+
+
+/*==============*/
+/*=== Header ===*/
+/*==============*/
+
+header {
+	width: 100%;
+	/*height: 80px;*/
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	border-bottom: 2px solid #ccc;
+	position: relative;
+}
+
+
+
+/*===============*/
+/*=== Content ===*/
+/*===============*/
+
+.content {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin: 0;
+	padding: 50px 0;
+	text-align: center;
+	position: relative;
+	z-index: 0;
+}
+
+div.linux-img {
+	width: 30%;
+	margin: auto;
+}
+
+div#modules > div {
+	padding: 40px 0 40px 0;
+	border-bottom: 1px solid #fff;
+}
+
+div#modules > div:last-child {
+	padding: 40px 0 0 0;
+	border-bottom: 0;
+}
+
+div#modules > div:first-child {
+	padding: 0 0 40px 0;
+	border-bottom: 1px solid #fff;
+}
+
+div#modules > div:only-child {
+	padding: 0 0 40px 0;
+	border-bottom: 0;
+}
+
+div#modules > div:nth-child(odd) > div.chart {
+	float:right
+}
+
+
+
+/*==============*/
+/*=== Config ===*/
+/*==============*/
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin: 0 0 8px 0;
+}
+
+.switch input {
+	display:none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: #E43825;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+
+.slider:before {
+  	position: absolute;
+  	content: "";
+  	height: 26px;
+  	width: 26px;
+  	left: 4px;
+  	bottom: 4px;
+  	background-color: #fff;
+  	-webkit-transition: .4s;
+  	transition: .4s;
+}
+
+input:checked + .slider {
+  	background-color: #2196F3;
+}
+
+input:focus + .slider {
+  	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  	-webkit-transform: translateX(26px);
+  	-ms-transform: translateX(26px);
+  	transform: translateX(26px);
+}
+
+
+
+/*==============*/
+/*=== Footer ===*/
+/*==============*/
+
+footer {
+	width: 100%;
+	float: left;
+	margin: 20px 0 0;
+	padding: 30px 0;
+	background: #222;
+}
+
+footer h5 {
+	color: #ffffff;
+	line-height:24px;
+	padding-bottom: 5px;
+	padding-top: 0px;
+	font-size: 24px;
+}
+
+footer p {
+	color: #eee;
+	line-height: 25px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+footer a {
+	color: #ddd !important;
+}
+
+footer a:hover {
+	color: #777 !important;
+}
+
+
+
+/*===========================*/
+/*=== Responsive Elements ===*/
+/*===========================*/
+
+
+@media only screen and (max-width: 767px) {
+
+	.container .clear, body .clear {
+		width: 100%;
+		float: left;
+		clear: both;
+		margin: 10px 0;
+	}
+
+	.container .one-third.column, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns {
+		margin-bottom: 20px;
+	}
+}
+
+
+
