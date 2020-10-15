@@ -75,7 +75,7 @@
 
 			<div class='container'>
 				<h2>Configuration</h2>
-				<p>This page allows you to alter the options for the configurable modules included with ServerStatus. Be sure to hit submit when you're done!</p>
+				<p>This page allows you to alter the options for the configurable modules included. Be sure to hit submit when you're done!</p>
 			</div>
 
 			<?php include $root.'modules/conf/mod_modulepicker.php' ?>
