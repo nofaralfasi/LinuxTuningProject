@@ -56,7 +56,8 @@
 		$dflist = substr($df, 11, -1);
 		$dfarray = explode("\n", $dflist);
 		$ls2 = shell_exec("ls /sys/class/net");
-		$ls = exec("/usr/bin/perl /var/www/html/ServerStatus-master/scripts/ls.pl linuxu Linux1212",$output);
+		$ls = shell_exec('./../scripts/ls /sys/class/net');
+		$ls3 = exec("/usr/bin/perl /var/www/html/ServerStatus-master/scripts/ls.pl linuxu Linux1212",$output);
 		$lslist = substr($ls, 0, -1);
 		$lsarray = explode("\n", $lslist);
 	?>
@@ -79,7 +80,7 @@
 
 			<?php include $root.'modules/conf/mod_modulepicker.php' ?>
 			<?php include $root.'modules/conf/mod_serveroptions.php' ?>
-			<?php include $root.'modules/conf/mod_styleoptions.php' ?>
+			<!-- <?php include $root.'modules/conf/mod_styleoptions.php' ?>-->
 
 		</div>
 
