@@ -68,7 +68,7 @@
 	</div>
 	<div class='ten columns'>
 		<h3>Network</h3>
-		<p id="network_ip_text">IP Address: <?php echo $_SERVER['SERVER_ADDR']; ?></p>
+		<!--<p id="network_ip_text">IP Address: <?php echo $_SERVER['SERVER_ADDR']; ?></p>-->
 		<p id="network_tx_text">Network Tx: <?php echo $stat['network_tx']," GB"; ?></p>
 		<p id="network_rx_text">Network Rx: <?php echo $stat['network_rx']," GB"; ?></p>
 		</p>
