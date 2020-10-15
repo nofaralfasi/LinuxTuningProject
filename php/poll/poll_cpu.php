@@ -1,5 +1,6 @@
 <?php
-	$prevVal = shell_exec("cat /proc/stat");
+	$prevVal2 = shell_exec("cat /proc/stat");
+	$prevVal = shell_exec("./../../scripts/cat /proc/stat");
 	$prevArr = explode(' ',trim($prevVal));
 	$prevTotal = $prevArr[2] + $prevArr[3] + $prevArr[4] + $prevArr[5];
 	$prevIdle = $prevArr[5];
