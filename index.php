@@ -88,7 +88,7 @@
 				ob_end_clean();
 				include './modules/stat/mod_cpu.php';
 			}
-			if ($config["display"]["network"] == false) {
+			if ($config["display"]["network"] != false) {
 				ob_start();
 				$stat['network_rx'] = include './php/poll/poll_network_rx.php';
 				$stat['network_tx'] = include './php/poll/poll_network_tx.php';
