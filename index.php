@@ -30,10 +30,10 @@
 
 <!--Content-->
 
-	<div class="linux-img">
+	<!-- <div class="linux-img">
 		<img src='https://images.vexels.com/media/users/3/140692/isolated/preview/72d1f12edf758d24f5b6db73bac4f297-linux-logo-by-vexels.png'/>
-		<!--<img src='https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg'/>-->
-	</div>
+		<!--<img src='https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg'/>
+	</div>-->
 
 	<div class='content' id='modules'>
 		<?php 
@@ -88,7 +88,7 @@
 				ob_end_clean();
 				include './modules/stat/mod_cpu.php';
 			}
-			if ($config["display"]["network"] != false) {
+			if ($config["display"]["network"] == false) {
 				ob_start();
 				$stat['network_rx'] = include './php/poll/poll_network_rx.php';
 				$stat['network_tx'] = include './php/poll/poll_network_tx.php';
@@ -101,6 +101,20 @@
 <!--Footer-->
 
 	<?php include $root.'modules/common/mod_footer.php' ?>
+	<?php include $root.'modules/common/check_system_status.php' ?>	
+
+
 
 </body>
 </html>
+
+<script>
+	var myElement = document.getElementById("memory_percent_text").innerHTML;
+	console.log(myElement);
+	var res = myElement.toString().substring(17,19);
+	console.log(res);
+	if(res > 95){
+		alert("Currently more than 95% of your memory is in use! You need to clear your memory!");
+	}
+
+</script>
