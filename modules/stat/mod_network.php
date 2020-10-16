@@ -1,6 +1,6 @@
 <div class='container'>
 	<div class='six columns chart'>
-		<canvas id="network" height="150" width="250"></canvas>
+		<canvas id="network" height="130" width="250"></canvas>
 		<script>		
 			var data = {
 				labels: [
