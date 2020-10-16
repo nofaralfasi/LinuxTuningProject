@@ -30,10 +30,11 @@
 
 <!--Content-->
 
-	<!-- <div class="linux-img">
-		<img src='https://images.vexels.com/media/users/3/140692/isolated/preview/72d1f12edf758d24f5b6db73bac4f297-linux-logo-by-vexels.png'/>
-		<!--<img src='https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg'/>
-	</div>-->
+	<div class="linux-img">
+		<!--<img src='https://images.vexels.com/media/users/3/140692/isolated/preview/72d1f12edf758d24f5b6db73bac4f297-linux-logo-by-vexels.png'/>-->
+		<!--<img src='https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg'/>-->
+		<img src='https://afraaltayer.files.wordpress.com/2014/03/logo-linux.png'/>
+	</div>
 
 	<div class='content' id='modules'>
 		<?php 
