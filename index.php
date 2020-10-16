@@ -31,8 +31,6 @@
 <!--Content-->
 
 	<div class="linux-img">
-		<!--<img src='https://images.vexels.com/media/users/3/140692/isolated/preview/72d1f12edf758d24f5b6db73bac4f297-linux-logo-by-vexels.png'/>-->
-		<!--<img src='https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg'/>-->
 		<img src='https://afraaltayer.files.wordpress.com/2014/03/logo-linux.png'/>
 	</div>
 
@@ -49,10 +47,7 @@
 			if ($config["display"]["memory"] != false) {
 				ob_start();
 				$stat['memory_total'] = include './php/poll/poll_memory_total.php';
-				//$stat['memory_free'] = include './php/poll/poll_memory_free.php';
-				//$stat['memory_used'] = $stat['memory_total'] - $stat['memory_free'];
-				//$stat['memory_percent'] = round($stat['memory_used'] / $stat['memory_total'] * 100, 2);
-				$stat['ram_total'] = include './php/poll/poll_ram_total.php'; //$stat['memory_total'];
+				$stat['ram_total'] = include './php/poll/poll_ram_total.php';
 				$stat['ram_free'] = include './php/poll/poll_ram_free.php';
 				$stat['ram_used'] = include './php/poll/poll_ram_used.php';
 				$stat['ram_percent'] = round($stat['ram_used'] / $stat['ram_total'] * 100, 2);
@@ -122,7 +117,7 @@
 <script>
 	
 	function checkSystemStatus(){
-		var myElement = document.getElementById("memory_percent_text").innerHTML;
+		var myElement = document.getElementById("ram_percent_text").innerHTML;
 		console.log(myElement);
 		var res = myElement.toString().substring(17,19);
 		console.log(res);

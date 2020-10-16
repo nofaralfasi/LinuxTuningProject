@@ -8,7 +8,7 @@
 	$prevIdle = $prevArr[5];
 	usleep(0.15 * 1000000);
 	$val3 = shell_exec("cat /proc/stat");
-	$val2 = exec("/usr/bin/perl /var/www/html/ServerStatus-master/scripts/cat.pl linuxu Linux1212",$output);
+	//$val2 = exec("/usr/bin/perl /var/www/html/ServerStatus-master/scripts/cat.pl linuxu Linux1212",$output);
 	$val4 = shell_exec("./../../scripts/cat /proc/stat");
 	//shell_exec("sudo chmod 777 cat linuxu Linux1212");
 	$val = shell_exec("./cat /proc/stat");
