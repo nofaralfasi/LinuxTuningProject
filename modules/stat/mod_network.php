@@ -1,6 +1,6 @@
 <div class='container'>
 	<div class='six columns chart'>
-		<canvas id="network" height="170" width="290"></canvas>
+		<canvas id="network" height="150" width="250"></canvas>
 		<script>		
 			var data = {
 				labels: [
@@ -9,15 +9,15 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['network_tx']; ?>, <?php echo $stat['network_rx']; ?>],
-					backgroundColor: ["#fff", "#fff"],
-					hoverBackgroundColor: ["#fff", "#fff"],
-					borderColor: ["#fff", "#fff"],
+					backgroundColor: ["#ff0100", "#009b00"],
+					hoverBackgroundColor: ["#dc0000", "green"],
+					borderColor: ["#eee", "#eee"],
 					borderWidth: 2,
 				}]
 			};
 
 			var options = {
-				responsive: false,
+				responsive: true,
 				legend: {
            			display: false,
         		},
@@ -33,10 +33,11 @@
             	scales: {
 	                yAxes: [{
 	                    gridLines: {
-	                        display: false,
+	                        display: true,
+				fontColor: "#fff",
 	                    },
 	                    ticks: {
-		                    userCallback: function(value, index, values) {
+		                    userCallback: function(value, index, values) {                            
 	                            value = value.toString();
 	                            return value + 'GB';
 	                        },
