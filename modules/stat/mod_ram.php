@@ -69,7 +69,7 @@
 		<h3>🌡️ RAM</h3>
 		<p id="ram_percent_text">Percentage Used: <?php echo $stat['ram_percent'],"%"; ?></p>
 		<p id="ram_total_text">Total Memory: <?php echo $stat['ram_total']," GB"; ?></p>
-		<p id="ram_free_text">Free Memory: <?php echo $stat['ra_free']," GB"; ?></p>
+		<p id="ram_free_text">Free Memory: <?php echo $stat['ram_free']," GB"; ?></p>
 		<p id="ram_used_text">Used Memory: <?php echo $stat['ram_used']," GB"; ?></p>
 	</div>
 </div>
