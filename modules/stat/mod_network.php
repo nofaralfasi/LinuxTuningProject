@@ -1,3 +1,8 @@
+<?php
+	// Linux Connections
+	$connections = `netstat -ntu | grep :80 | grep ESTABLISHED | grep -v LISTEN | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -rn | grep -v 127.0.0.1 | wc -l`; 
+	$totalconnections = `netstat -ntu | grep :80 | grep -v LISTEN | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -rn | grep -v 127.0.0.1 | wc -l`;
+?>
 <div class='container'>
 	<div class='six columns chart'>
 		<canvas id="network" height="130" width="250"></canvas>
@@ -68,8 +73,9 @@
 		</script>
 	</div>
 	<div class='ten columns'>
-		<h3>Network</h3>
-		<!--<p id="network_ip_text">IP Address: <?php echo $_SERVER['SERVER_ADDR']; ?></p>-->
+		<h3>🖧 Network</h3>
+		<p id="network_ip_text">Established Connections: <?php echo $connections; ?></p>
+		<p id="network_ip_text">Total Connections: <?php echo $totalconnections; ?></p>
 		<p id="network_tx_text">Network Tx: <?php echo $stat['network_tx']," GB"; ?></p>
 		<p id="network_rx_text">Network Rx: <?php echo $stat['network_rx']," GB"; ?></p>
 		</p>

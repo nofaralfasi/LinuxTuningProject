@@ -65,7 +65,7 @@
 
 	</div>
 	<div class='ten columns'>
-		<h3>CPU</h3>
+		<h3>🖥️ CPU</h3>
 		<p id="cpu_model_text">CPU Model: <?php echo $stat['cpu_model']; ?></p>
 		<p id="cpu_usage_text">CPU Usage: <?php echo $stat['cpu_usage'],"%"; ?></p>
 	</div>

@@ -49,11 +49,16 @@
 			if ($config["display"]["memory"] != false) {
 				ob_start();
 				$stat['memory_total'] = include './php/poll/poll_memory_total.php';
-				$stat['memory_free'] = include './php/poll/poll_memory_free.php';
-				$stat['memory_used'] = $stat['memory_total'] - $stat['memory_free'];
-				$stat['memory_percent'] = round($stat['memory_used'] / $stat['memory_total'] * 100, 2);
+				//$stat['memory_free'] = include './php/poll/poll_memory_free.php';
+				//$stat['memory_used'] = $stat['memory_total'] - $stat['memory_free'];
+				//$stat['memory_percent'] = round($stat['memory_used'] / $stat['memory_total'] * 100, 2);
+				$stat['ram_total'] = include './php/poll/poll_ram_total.php'; //$stat['memory_total'];
+				$stat['ram_free'] = include './php/poll/poll_ram_free.php';
+				$stat['ram_used'] = include './php/poll/poll_ram_used.php';
+				$stat['ram_percent'] = round($stat['ram_used'] / $stat['ram_total'] * 100, 2);
 				ob_end_clean();
-				include './modules/stat/mod_memory.php';
+				//include './modules/stat/mod_memory.php';
+				include './modules/stat/mod_ram.php';
 			}
 			if ($config["display"]["hdd1"] != false) {
 				ob_start();
@@ -96,6 +101,13 @@
 				ob_end_clean();
 				include './modules/stat/mod_network.php';
 			}
+			/*ob_start();
+			$stat['ram_total'] = include './php/poll/poll_ram_total.php';
+			$stat['ram_free'] = include './php/poll/poll_ram_free.php';
+			$stat['ram_used'] = include './php/poll/poll_ram_used.php';
+			$stat['ram_percent'] = round($stat['ram_used'] / $stat['ram_total'] * 100, 2);
+			ob_end_clean();
+			include './modules/stat/mod_ram.php';*/
 		?>
 	</div>
 

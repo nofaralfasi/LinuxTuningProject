@@ -44,7 +44,7 @@
 		</script>
 	</div>
 	<div class='ten columns'>
-		<h3>Hard Drive 1 (<?php echo $config['hdd1']['path']; ?>)</h3>
+		<h3>💽 Hard Drive 1 (<?php echo $config['hdd1']['path']; ?>)</h3>
 		<p id="hdd1_percent_text">Hard Drive Usage: <?php echo $stat['hdd1_percent'],"%"; ?></p>
 		<p id="hdd1_total_text">Hard Drive Capacity: <?php echo $stat['hdd1_total']," GB"; ?></p>
 		<p id="hdd1_free_text">Hard Drive Free Space: <?php echo $stat['hdd1_free']," GB"; ?></p>
