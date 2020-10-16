@@ -16,11 +16,11 @@
 	$memcached = round($mem[5] / 1000000,2);
 	$memavailable = round($mem[6] / 1000000,2);
 
-
 	$memusage = round(($memavailable/$memtotal)*100);
 
 	$stat['ram_total'] =  $memtotal;
 	$stat['ram_used'] = $memused;
 	$stat['ram_available'] = $memavailable;
+	$stat['ram_free'] = $memavailable;
 ?>
 
