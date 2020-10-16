@@ -16,7 +16,6 @@
 
 	<script type="text/javascript" src="./js/jquery-1.12.3.min.js"></script>
     	<script type="text/javascript" src="./js/Chart.min.js"></script>
-    <!--<script type="text/javascript" src="./js/angular.min.js"></script>-->
 
 	<?php
 		$root = "./";
@@ -64,24 +63,6 @@
 				ob_end_clean();
 				include './modules/stat/mod_hdd1.php';
 			}
-			if ($config["display"]["hdd2"] != false) {
-				ob_start();
-				$stat['hdd2_total'] = include './php/poll/poll_hdd2_total.php';
-				$stat['hdd2_free'] = include './php/poll/poll_hdd2_free.php';
-				$stat['hdd2_used'] = $stat['hdd2_total'] - $stat['hdd2_free'];
-				$stat['hdd2_percent'] = round($stat['hdd2_used'] / $stat['hdd2_total'] * 100, 2);
-				ob_end_clean();
-				include './modules/stat/mod_hdd2.php';
-			}
-			if ($config["display"]["hdd3"] != false) {
-				ob_start();
-				$stat['hdd3_total'] = include './php/poll/poll_hdd3_total.php';
-				$stat['hdd3_free'] = include './php/poll/poll_hdd3_free.php';
-				$stat['hdd3_used'] = $stat['hdd3_total'] - $stat['hdd3_free'];
-				$stat['hdd3_percent'] = round($stat['hdd3_used'] / $stat['hdd3_total'] * 100, 2);
-				ob_end_clean();
-				include './modules/stat/mod_hdd3.php';
-			}
 			if ($config["display"]["cpu"] != false) {
 				ob_start();
 				$stat['cpu_model'] = include './php/poll/poll_cpu_model.php';
@@ -96,20 +77,12 @@
 				ob_end_clean();
 				include './modules/stat/mod_network.php';
 			}
-			/*ob_start();
-			$stat['ram_total'] = include './php/poll/poll_ram_total.php';
-			$stat['ram_free'] = include './php/poll/poll_ram_free.php';
-			$stat['ram_used'] = include './php/poll/poll_ram_used.php';
-			$stat['ram_percent'] = round($stat['ram_used'] / $stat['ram_total'] * 100, 2);
-			ob_end_clean();
-			include './modules/stat/mod_ram.php';*/
 		?>
 	</div>
 
 <!--Footer-->
 
 	<?php include $root.'modules/common/mod_footer.php' ?>
-	<?php include $root.'modules/common/check_system_status.php' ?>	
 
 </body>
 </html>
