@@ -67,19 +67,3 @@
 </body>
 </html>
 
-<script>
-
-    function checkSystemStatus() {
-        var myElement = document.getElementById("ram_percent_text").innerHTML;
-        console.log(myElement);
-        var res = myElement.toString().substring(17, 19);
-        console.log(res);
-        if (res > 95) {
-            alert("Currently more than 95% of your memory is in use! You need to clear your memory!");
-        }
-        clearInterval(t);
-    }
-
-    var t = setInterval(checkSystemStatus, 2000);
-
-</script>

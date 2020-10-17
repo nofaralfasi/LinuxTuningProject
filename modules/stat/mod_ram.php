@@ -10,8 +10,8 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['ram_used']; ?>, <?php echo $stat['ram_free']; ?>],
-					backgroundColor: ["red", "#97e300"],
-					hoverBackgroundColor: ["#e93535", "#74e760"],
+					backgroundColor: ["#ff0100", "#009b00"],
+					hoverBackgroundColor: ["#dc0000", "green"],
 					borderColor: ["#eee", "#eee"],
 				}]
 			};

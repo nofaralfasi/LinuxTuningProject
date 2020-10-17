@@ -35,14 +35,14 @@
     <?php
     $root = "./";
     $config = parse_ini_file('./conf/server_conf.ini', true);
+    shell_exec("echo Linux1212 | sudo -S chmod 777 /scripts/ls");
+    shell_exec("echo Linux1212 | sudo -S chmod 777 /scripts/cat2");
     ?>
 
 </head>
 
 <body class="bg-light">
-<!--    --><?php //include $root.'modules/common/mod_header.php' ?>
     <?php include $root . 'header.php' ?>
-<!--Content-->
 
 <div class="linux-img">
     <img src='https://afraaltayer.files.wordpress.com/2014/03/logo-linux.png' alt="linux_icon"/>

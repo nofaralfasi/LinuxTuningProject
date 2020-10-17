@@ -79,7 +79,6 @@
 
 			<?php include $root.'modules/conf/mod_modulepicker.php' ?>
 			<?php include $root.'modules/conf/mod_serveroptions.php' ?>
-<!--			 --><?php //include $root.'modules/conf/mod_styleoptions.php' ?>
 
 		</div>
 
