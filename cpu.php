@@ -10,8 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <script type="text/javascript" src="./js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="./js/Chart.min.js"></script>
@@ -71,7 +70,7 @@
 <script>
 
     function checkSystemStatus() {
-        var myElement = document.getElementById("ram_percent_text").innerHTML;
+        var myElement = document.getElementById("cpu_usage_text").innerHTML;
         console.log(myElement);
         var res = myElement.toString().substring(17, 19);
         console.log(res);

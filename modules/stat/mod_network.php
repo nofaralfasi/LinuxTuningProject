@@ -40,14 +40,14 @@
 	                yAxes: [{
 	                    gridLines: {
 	                        display: true,
-				fontColor: "#fff",
+				fontColor: "#6c757d",
 	                    },
 	                    ticks: {
 		                    userCallback: function(value, index, values) {                            
 	                            value = value.toString();
 	                            return value + 'GB';
 	                        },
-	                        fontColor: "#fff",
+	                        fontColor: "#6c757d",
 	                    },
 	                }],
 	                xAxes: [{
@@ -55,7 +55,7 @@
 	                        display: false,
 	                    },
 	                    ticks: {
-	                    	fontColor: "#fff",
+	                    	fontColor: "#6c757d",
 	                    }
 	                }]
 	            }
@@ -79,7 +79,6 @@
 		<!--<p id="network_ip_text">Total Connections: <?php echo $totalconnections; ?></p>-->
 		<p id="network_tx_text">Network Tx: <?php echo $stat['network_tx']," GB"; ?></p>
 		<p id="network_rx_text">Network Rx: <?php echo $stat['network_rx']," GB"; ?></p>
-
 	</div>
 </div>
 </div>
