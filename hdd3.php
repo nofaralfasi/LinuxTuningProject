@@ -54,7 +54,7 @@
         ob_start();
         $stat['hdd3_total'] = include './php/poll/poll_hdd3_total.php';
         $stat['hdd3_free'] = include './php/poll/poll_hdd3_free.php';
-        $stat['hdd3_used'] = $stat['hdd2_total'] - $stat['hdd3_free'];
+        $stat['hdd3_used'] = $stat['hdd3_total'] - $stat['hdd3_free'];
         $stat['hdd3_percent'] = round($stat['hdd3_used'] / $stat['hdd3_total'] * 100, 2);
         ob_end_clean();
         include './modules/stat/mod_hdd3.php';
