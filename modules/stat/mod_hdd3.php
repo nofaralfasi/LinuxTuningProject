@@ -1,5 +1,6 @@
 <div class='container'>
-	<div class='six columns chart'>
+<div class='row'>
+	<div class='col-sm-5 chart'>
 		<canvas id="hdd3" height="200" width="200"></canvas>
 		<script>		
 			var data = {
@@ -43,11 +44,13 @@
 
 		</script>
 	</div>
-	<div class='ten columns'>
+	<div class='col-sm-7'>
 		<h3>💽 Hard Drive 3 (<?php echo $config['hdd3']['path']; ?>)</h3>
 		<p id="hdd3_percent_text">Hard Drive Usage: <?php echo $stat['hdd3_percent'],"%"; ?></p>
 		<p id="hdd3_total_text">Hard Drive Capacity: <?php echo $stat['hdd3_total']," GB"; ?></p>
 		<p id="hdd3_free_text">Hard Drive Free Space: <?php echo $stat['hdd3_free']," GB"; ?></p>
 		<p id="hdd3_used_text">Hard Drive Used Space: <?php echo $stat['hdd3_used']," GB"; ?></p>
 	</div>
+</div>
+<hr>
 </div>

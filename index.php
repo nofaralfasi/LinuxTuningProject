@@ -8,11 +8,9 @@
 	<meta name="description" content="Linux Project Nofar Alfasi">
 	<link rel="shortcut icon" href="./img/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="./css/reset.min.css">
+
 	<link rel="stylesheet" href="./css/base.css">
-	<link rel="stylesheet" href="./css/skeleton.min.css">
-	<meta name="theme-color" content="#333">
-	<meta name="msapplication-navbutton-color" content="#333">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 	<script type="text/javascript" src="./js/jquery-1.12.3.min.js"></script>
     	<script type="text/javascript" src="./js/Chart.min.js"></script>

@@ -1,5 +1,6 @@
 <div class='container'>
-	<div class='six columns chart'>
+<div class='row'>
+	<div class='col-sm-6 chart'>
 		<canvas id="memory" height="200" width="200"></canvas>
 		<script>		
 			var data = {
@@ -65,7 +66,7 @@
 
 		</script>
 	</div>
-	<div class='ten columns'>
+	<div class='col-sm-5'>
 		<h3>Memory</h3>
 		<p id="memory_percent_text">Percentage Used: <?php echo $stat['memory_percent'],"%"; ?></p>
 		<p id="memory_total_text">Total Memory: <?php echo $stat['memory_total']," GB"; ?></p>
@@ -73,3 +74,5 @@
 		<p id="memory_used_text">Used Memory: <?php echo $stat['memory_used']," GB"; ?></p>
 	</div>
 </div>
+</div>
+<hr>

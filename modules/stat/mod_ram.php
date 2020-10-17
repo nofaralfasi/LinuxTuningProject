@@ -1,5 +1,6 @@
 <div class='container'>
-	<div class='six columns chart'>
+<div class='row'>
+	<div class='col-sm-5 chart'>
 		<canvas id="ram" height="200" width="200"></canvas>
 		<script>		
 			var data = {
@@ -9,8 +10,8 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['ram_used']; ?>, <?php echo $stat['ram_free']; ?>],
-					backgroundColor: ["#ff0100", "#009b00"],
-					hoverBackgroundColor: ["#dc0000", "green"],
+					backgroundColor: ["red", "#97e300"],
+					hoverBackgroundColor: ["#e93535", "#74e760"],
 					borderColor: ["#eee", "#eee"],
 				}]
 			};
@@ -65,11 +66,13 @@
 
 		</script>
 	</div>
-	<div class='ten columns'>
+	<div class='col-sm-7'>
 		<h3>🌡️ RAM</h3>
 		<p id="ram_percent_text">Percentage Used: <?php echo $stat['ram_percent'],"%"; ?></p>
 		<p id="ram_total_text">Total Memory: <?php echo $stat['ram_total']," GB"; ?></p>
 		<p id="ram_free_text">Free Memory: <?php echo $stat['ram_free']," GB"; ?></p>
 		<p id="ram_used_text">Used Memory: <?php echo $stat['ram_used']," GB"; ?></p>
 	</div>
+</div>
+<hr>
 </div>

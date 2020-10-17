@@ -1,5 +1,6 @@
 <div class='container'>
-	<div class='six columns chart'>
+<div class='row'>
+	<div class='col-sm-5 chart'>
 		<canvas id="cpu" height="200" width="200"></canvas>
 		<script>
 			var data = {
@@ -9,8 +10,8 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['cpu_usage']; ?>, 100 - <?php echo $stat['cpu_usage']; ?>],
-					backgroundColor: ["#ff0100", "#009b00"],
-					hoverBackgroundColor: ["#dc0000", "green"],
+					backgroundColor: ["red", "#97e300"],
+					hoverBackgroundColor: ["#e93535", "#74e760"],
 					borderColor: ["#eee", "#eee"],
 				}]
 			};
@@ -64,9 +65,11 @@
 		</script>
 
 	</div>
-	<div class='ten columns'>
+	<div class='col-sm-7'>
 		<h3>🖥️ CPU</h3>
 		<p id="cpu_model_text">CPU Model: <?php echo $stat['cpu_model']; ?></p>
 		<p id="cpu_usage_text">CPU Usage: <?php echo $stat['cpu_usage'],"%"; ?></p>
 	</div>
+</div>
+<hr>
 </div>
