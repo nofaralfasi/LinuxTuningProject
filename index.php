@@ -99,7 +99,7 @@
 	</div>
 
 <!--Footer-->
-
+	
 	<?php include $root.'modules/common/mod_footer.php' ?>
 
 </body>
