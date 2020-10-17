@@ -53,7 +53,7 @@
     <?php
     if ($config["display"]["memory"] != false) {
         ob_start();
-        $stat['memory_total'] = include './php/poll/poll_memory_total.php';
+        //$stat['memory_total'] = include './php/poll/poll_memory_total.php';
         $stat['ram_total'] = include './php/poll/poll_ram_total.php';
         $stat['ram_free'] = include './php/poll/poll_ram_free.php';
         $stat['ram_used'] = include './php/poll/poll_ram_used.php';
