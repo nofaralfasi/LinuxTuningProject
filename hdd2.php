@@ -75,9 +75,13 @@
         var myElement = document.getElementById("hdd2_percent_text").innerHTML;
         console.log(myElement);
         var res = myElement.toString().substring(18, 20);
+	var max_used = 90;
         console.log(res);
-        if (res > 90) {
-            alert("Currently more than 90% of your memory is in use! You need to clear your memory!");
+        if (res > max_used) {
+	    var tot = document.getElementById("hdd2_total_text").innerHTML;
+	    tot = tot.toString().substring(21, 23);
+	    var gb_to_add = (tot * (res - max_used)) / 100;
+            alert("Currently more than " + max_used +"% of your memory is in use! \nYou need to add " + gb_to_add +"GB to your memory!");
         }
         clearInterval(t);
     }
