@@ -1,6 +1,6 @@
 <div class='container'>
 	<div class='six columns chart'>
-		<canvas id="hdd2" height="172" width="172"></canvas>
+		<canvas id="hdd2" height="200" width="200"></canvas>
 		<script>		
 			var data = {
 				labels: [
@@ -9,9 +9,9 @@
 				],
 				datasets: [{
 					data: [<?php echo $stat['hdd2_used']; ?>, <?php echo $stat['hdd2_free']; ?>],
-					backgroundColor: ["#e74c3c", "#2980b9"],
-					hoverBackgroundColor: ["#E43825", "#2573A7"],
-					borderColor: ["#ccc", "#ccc"],
+					backgroundColor: ["#ff0100", "#009b00"],
+					hoverBackgroundColor: ["#dc0000", "green"],
+					borderColor: ["#eee", "#eee"],
 				}]
 			};
 
@@ -44,7 +44,7 @@
 		</script>
 	</div>
 	<div class='ten columns'>
-		<h3>Hard Drive 2 (<?php echo $config['hdd2']['path']; ?>)</h3>
+		<h3>💽 Hard Drive 2 (<?php echo $config['hdd2']['path']; ?>)</h3>
 		<p id="hdd2_percent_text">Hard Drive Usage: <?php echo $stat['hdd2_percent'],"%"; ?></p>
 		<p id="hdd2_total_text">Hard Drive Capacity: <?php echo $stat['hdd2_total']," GB"; ?></p>
 		<p id="hdd2_free_text">Hard Drive Free Space: <?php echo $stat['hdd2_free']," GB"; ?></p>
