@@ -77,8 +77,8 @@
         console.log(myElement);
         var res = myElement.toString().substring(17, 19);
         console.log(res);
-        if (res > 95) {
-            alert("Currently more than 95% of your memory is in use! You need to clear your memory!");
+        if (res > 90) {
+            alert("Currently more than 90% of your memory is in use! You need to clear your memory!");
         }
         clearInterval(t);
     }
