@@ -52,5 +52,5 @@
 		<p id="hdd2_used_text">Hard Drive Used Space: <?php echo $stat['hdd2_used']," GB"; ?></p>
 	</div>
 </div>
-<hr>
+
 </div>

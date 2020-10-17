@@ -71,5 +71,4 @@
 		<p id="cpu_usage_text">CPU Usage: <?php echo $stat['cpu_usage'],"%"; ?></p>
 	</div>
 </div>
-<hr>
 </div>

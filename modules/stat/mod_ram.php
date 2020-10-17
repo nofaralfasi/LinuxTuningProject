@@ -74,5 +74,4 @@
 		<p id="ram_used_text">Used Memory: <?php echo $stat['ram_used']," GB"; ?></p>
 	</div>
 </div>
-<hr>
 </div>

@@ -7,6 +7,5 @@
 		<p id="os_uptime_text">⏱️ Uptime: <?php echo "$days days $hours hours $mins minutes and $secs seconds"; ?></p>
 	</div>
 </div>
-<hr>
 </div>
 

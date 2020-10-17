@@ -79,8 +79,7 @@
 		<!--<p id="network_ip_text">Total Connections: <?php echo $totalconnections; ?></p>-->
 		<p id="network_tx_text">Network Tx: <?php echo $stat['network_tx']," GB"; ?></p>
 		<p id="network_rx_text">Network Rx: <?php echo $stat['network_rx']," GB"; ?></p>
-		</p>
+
 	</div>
 </div>
-<hr>
 </div>
