@@ -2,8 +2,6 @@
 	//$prevVal = shell_exec("cat /proc/stat");
 	$prevVal = shell_exec("./../../scripts/cat2 /proc/stat");
 	$prevArr = explode(' ',trim($prevVal));
-	//echo "<script>console.log('prevVal Objects: " . $prevArr[2] . "' );</script>";
-//	echo "\ncpu_result: " . var_dump($my_output) . "\n";
 	$prevTotal = $prevArr[2] + $prevArr[3] + $prevArr[4] + $prevArr[5] + $prevArr[6] + $prevArr[7] + $prevArr[8];
 	$prevIdle = $prevArr[5];
 	//usleep(0.15 * 1000000);
