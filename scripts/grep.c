@@ -2,7 +2,7 @@
 #include<string.h>
 #include<unistd.h>
 
-void main(int argc , char *argv[])
+int main(int argc , char *argv[])
 {
                FILE *fp;
 	       int flag = 0;
@@ -28,4 +28,5 @@ void main(int argc , char *argv[])
                     }
            }
             fclose(fp);
+return 0;
 }
